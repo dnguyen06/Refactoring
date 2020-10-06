@@ -1,7 +1,7 @@
 
 public class Triangle extends Shape {
 	
-	public double sideA, sideC, base, height;
+	private double sideA, sideC, base, height;
 	
 	public Triangle (double sideA, double sideC, double base, double height, double xVal, double yVal) {
 		super(xVal, yVal);
@@ -17,6 +17,38 @@ public class Triangle extends Shape {
 	
 	public double circumference() {
 		return sideA + sideC + base;
+	}
+	
+	public void setsideA (double length) {
+		this.sideA = length;
+	}
+	
+	public void setsideC (double length) {
+		this.sideC = length;
+	}
+	
+	public void setBase (double length) {
+		this.base = length;
+	}
+	
+	public void setHeight (double length) {
+		this.height = length;
+	}
+	
+	public double getsideA () {
+		return this.sideA;
+	}
+	
+	public double getsideC () {
+		return this.sideC;
+	}
+	
+	public double getBase () {
+		return this.base;
+	}
+	
+	public double getHeight () {
+		return this.height;
 	}
 	
 
