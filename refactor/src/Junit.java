@@ -22,7 +22,12 @@ class Junit {
 	
 	@Test
 	public void testTriangleSetters() {
-		Triangle t = new Triangle(5, 5, 10, 20, 0, 0);
+		Triangle t = new Triangle(0, 0, 0, 0, 0, 0);
+		
+		t.setsideA(5);
+		t.setsideC(5);
+		t.setBase(10);
+		t.setHeight(20);
 		
 		double expectedArea = 100;
 		double expectedPerimeter = 20;
