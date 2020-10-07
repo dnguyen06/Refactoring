@@ -17,7 +17,7 @@ public class Circle extends Shape {
 	}
 
 	public double area() {
-		return super.area(radius, radius) * Math.PI;
+		return radius * radius * Math.PI;
 	}
 	
 	public double circumference() {
