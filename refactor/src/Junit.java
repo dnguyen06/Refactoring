@@ -28,7 +28,7 @@ class Junit {
 		double expectedPerimeter = 20;
 		
 		assertEquals(expectedArea, t.area());
-		assertEquals(expectedPerimeter, t.circumference());
+		assertEquals(expectedPerimeter, t.perimeter());
 	}
 	
 	@Test
