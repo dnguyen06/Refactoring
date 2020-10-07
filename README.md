@@ -163,7 +163,10 @@ To test I created Circle, Square and Rectangle objects with specified dimensions
 
 This code is now better structured after refactoring because the duplicated calculation of area was extracted up into the parent class Shape. The structure makes sense because every shape has an area. The result of this refactoring does suggest further refactoring, specifically for the Circle class which will be done later in the fourth refactor.
 
-***SHA: 489fa1426c136592426c2146040cbc042bceea41***
+***SHA: 7fc9c7a21a05d377a97c72d551327b94f87b9f5b*** (Square and Rectangle)
+***SHA: 489fa1426c136592426c2146040cbc042bceea41*** (Circle)
+***SHA:1950232ca35eec1f390450c620d9bdcb2d601f05*** (Triangle)
+
 
 #
 
