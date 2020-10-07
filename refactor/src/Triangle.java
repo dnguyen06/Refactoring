@@ -15,7 +15,7 @@ public class Triangle extends Shape {
 		return super.area(base, height)/2;
 	}
 	
-	public double circumference() {
+	public double perimeter() {
 		return sideA + sideC + base;
 	}
 	
