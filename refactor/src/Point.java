@@ -121,12 +121,15 @@ public class Point {
 	 * @return the distance between the points
 	 */
 	public double distance(Point point) {
-		double xDisplacement = point.x - x;
-		double yDisplacement = point.y - y;
-		xDisplacement *= xDisplacement;
-		yDisplacement *= yDisplacement;
-		double distance = Math.sqrt(xDisplacement + yDisplacement);
-		return distance;
+		return Math.sqrt(xDisplacement(x, point.x) + yDisplacement(y, point.y));
+	}
+	
+	private double xDisplacement(double x1, double x2) {
+		return (x2 - x1) * (x2 - x1);
+	}
+	
+	private double yDisplacement(double y1, double y2) {
+		return (y2 - y1) * (y2 - y1);
 	}
 	
 

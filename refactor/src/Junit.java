@@ -57,6 +57,16 @@ class Junit {
 		
 		assertEquals(expectedArea, c.area(), 1);
 	}
+	
+	@Test
+	public void testPointDistance() {
+		Point p1 = new Point(0, 0);
+		Point p2 = new Point(10, 0);
+		
+		double expecetedDistance = 10;
+		
+		assertEquals(expecetedDistance, p1.distance(p2));
+	}
 
 
 }
