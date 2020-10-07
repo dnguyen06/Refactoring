@@ -30,5 +30,24 @@ class Junit {
 		assertEquals(expectedArea, t.area());
 		assertEquals(expectedPerimeter, t.circumference());
 	}
+	
+	@Test
+	public void testSquareArea() {
+		Square s = new Square(6, 6, 0, 0);
+		
+		double expectedArea = 36;
+		
+		assertEquals(expectedArea, s.area());
+	}
+	
+	@Test
+	public void testRectangleArea() {
+		Rectangle r = new Rectangle(9, 9, 0, 0);
+		
+		double expectedArea = 81;
+		
+		assertEquals(expectedArea, r.area());
+	}
+
 
 }

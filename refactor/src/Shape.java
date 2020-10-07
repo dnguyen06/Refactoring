@@ -28,5 +28,9 @@ public class Shape {
 		origin.move(x, y);
 	}
 
+	public double area(double length1, double length2) {
+		return length1 * length2;
+	}
+
 
 }

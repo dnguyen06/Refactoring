@@ -29,7 +29,7 @@ public class Rectangle extends Shape {
 	}
 
 	public double area() {
-		return length * width;
+		return super.area(length, width);
 	}
 
 	public double circumference() {
