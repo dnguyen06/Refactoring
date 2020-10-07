@@ -67,6 +67,26 @@ class Junit {
 		
 		assertEquals(expecetedDistance, p1.distance(p2));
 	}
+	
+	@Test
+	public void testRectangleDistance() {
+		Rectangle r1 = new Rectangle(10, 10, 0, 0);
+		Rectangle r2 = new Rectangle(10, 10, 25, 0);
+		
+		double expectedDistance = 25;
+		
+		assertEquals(expectedDistance, r1.distance(r2));
+	}
+	
+	@Test
+	public void testShapeDistance() {
+		Rectangle r = new Rectangle(50, 50, 0, 0);
+		Square s = new Square(5, 5, 0, 100);
+		
+		double expectedDistance = 100;
+		
+		assertEquals(expectedDistance, r.distance(s));
+	}
 
 
 }

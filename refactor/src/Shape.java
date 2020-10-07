@@ -31,6 +31,10 @@ public class Shape {
 	public double area(double length1, double length2) {
 		return length1 * length2;
 	}
+	
+	public double distance(Shape shape) {
+		return origin.distance(shape.getOrigin());
+	}
 
 
 }

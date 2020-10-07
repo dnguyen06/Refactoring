@@ -36,10 +36,4 @@ public class Rectangle extends Shape {
 		return (2 * length) + (2 * width);
 	}
 	
-	public double distance(Rectangle r) {
-		Point p1 = super.getOrigin();
-		Point p2 = r.getOrigin();
-		return p1.distance(p2);
-	}	
-
 }
