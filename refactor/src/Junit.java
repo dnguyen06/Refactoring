@@ -33,7 +33,7 @@ class Junit {
 	
 	@Test
 	public void testSquareArea() {
-		Square s = new Square(6, 6, 0, 0);
+		Square s = new Square(6, 0, 0);
 		
 		double expectedArea = 36;
 		
@@ -81,7 +81,7 @@ class Junit {
 	@Test
 	public void testShapeDistance() {
 		Rectangle r = new Rectangle(50, 50, 0, 0);
-		Square s = new Square(5, 5, 0, 100);
+		Square s = new Square(5, 0, 100);
 		
 		double expectedDistance = 100;
 		
