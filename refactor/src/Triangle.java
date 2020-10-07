@@ -12,7 +12,7 @@ public class Triangle extends Shape {
 	}
 	
 	public double area() {
-		return (base * height)/2;
+		return super.area(base, height)/2;
 	}
 	
 	public double circumference() {
