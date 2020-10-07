@@ -48,6 +48,15 @@ class Junit {
 		
 		assertEquals(expectedArea, r.area());
 	}
+	
+	@Test
+	public void testCircleArea() {
+		Circle c = new Circle(10, 0, 0);
+		
+		double expectedArea = 314.16;
+		
+		assertEquals(expectedArea, c.area(), 1);
+	}
 
 
 }
